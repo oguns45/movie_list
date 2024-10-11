@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie & TV Show Listing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <form id="form">
+            <input type="text" placeholder="Search for movies..." id="search" class="search">
+        </form>
+        <!-- Buttons for fetching movies and TV shows -->
+        <button id="now-playing">Now Playing Movies</button>
+        <button id="popular-tv">Popular TV Shows</button>
+        <button id="on-air-tv">On Air TV Shows</button>
+    </header>
+    
+    <!-- Genre Tags -->
+     
+    <div id="tags">
+        <div class="tag">Action</div>
+        <div class="tag">Adventure</div>
+        <div class="tag">Drama</div>
+        <div class="tag">Comedy</div>
+    </div>
+    
+    <!-- Main container to display movies and TV shows -->
+    <main id="main">
+        <!-- Example of movies already displayed -->
+        <div class="movie">
+            <img src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg" alt="Inception Poster">
+            <div class="movie-info">
+                <h3>Inception</h3>
+                <span class="green">9.8</span>
+            </div>
+            <div class="overview">
+                A mind-bending thriller about dream heists.
+            </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie">
+            <img src="https://image.tmdb.org/t/p/w500/ofwSiqOFShhunAIYYdSMHMJQSx2.jpg" alt="The Matrix Poster">
+            <div class="movie-info">
+                <h3>The Matrix</h3>
+                <span class="green">8.7</span>
+            </div>
+            <div class="overview">
+                A computer hacker learns from mysterious rebels about the true nature of his reality.
+            </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="movie">
+            <img src="https://image.tmdb.org/t/p/w500/1qCq228LsNtUseCnNE7Naw6NBUz.jpg" alt="Interstellar Poster">
+            <div class="movie-info">
+                <h3>Interstellar</h3>
+                <span class="green">8.6</span>
+            </div>
+            <div class="overview">
+                A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+            </div>
+        </div>
+
+        <!-- Movie 4 -->
+        <div class="movie">
+            <img src="https://image.tmdb.org/t/p/w500/rA4Jttg1kJvNhSv7wM0SNyXrqY0.jpg" alt="Dunkirk Poster">
+            <div class="movie-info">
+                <h3>Dunkirk</h3>
+                <span class="green">7.9</span>
+            </div>
+            <div class="overview">
+                Allied soldiers from Belgium, the British Empire and France are surrounded by the German Army.
+            </div>
+        </div>
+    </main>
+
+        <!-- Loading Spinner -->
+    <div id="loading" style="display: none;">
+        <img src="spinner.gif" alt="Loading..." />
+    </div>
+
+    <!-- Pagination Controls -->
+    <div id="pagination">
+        <button id="prev" disabled>Previous</button>
+        <span id="current-page">1</span>
+        <button id="next">Next</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
